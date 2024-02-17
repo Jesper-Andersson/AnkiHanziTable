@@ -1,5 +1,6 @@
 # AnkiHanziTable
-![image](https://github.com/AustinHasten/AnkiKanjiTable/assets/16011612/0a12f3d9-33c4-4f3f-a868-e127c16187c4)
+![image](https://github.com/Jesper-Andersson/AnkiHanziTable/assets/5511771/28c76847-7fda-4b85-baa3-8187e1c0f3c9)
+
 
 Fork of AnkiKanjiTable for use with Chinese.
 https://github.com/AustinHasten/AnkiKanjiTable
