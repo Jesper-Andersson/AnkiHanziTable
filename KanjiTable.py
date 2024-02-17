@@ -280,7 +280,7 @@ class KanjiCell(MyQTableWidgetItem):
         return c
 
     def clicked(self):
-        webbrowser.open(f'https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb={self.text()}')
+        webbrowser.open(f'https://www.mdbg.net/chinese/dictionary?page=chardict&cdcanoce=0&cdqchi=%E4%BD%A0{self.text()}')
 
     def mostMatureClicked(self, cid):
         browserSearch(f'cid:{self.data["cid"]}')
