@@ -1,5 +1,11 @@
-# AnkiKanjiTable
+# AnkiHanziTable
 ![image](https://github.com/AustinHasten/AnkiKanjiTable/assets/16011612/0a12f3d9-33c4-4f3f-a868-e127c16187c4)
+
+Fork of AnkiKanjiTable for use with Chinese.
+https://github.com/AustinHasten/AnkiKanjiTable
+
+Data from Hanzi Stats
+https://ankiweb.net/shared/info/181243826
 
 Visualize your progress by seeing your kanji cards in a pretty table with their maturity indicated by their color.
 

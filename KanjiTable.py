@@ -280,7 +280,7 @@ class KanjiCell(MyQTableWidgetItem):
         return c
 
     def clicked(self):
-        webbrowser.open(f'https://jisho.org/search/{self.text()} %23kanji')
+        webbrowser.open(f'https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb={self.text()}')
 
     def mostMatureClicked(self, cid):
         browserSearch(f'cid:{self.data["cid"]}')
@@ -344,16 +344,26 @@ class KanjiData:
 
     def __gt__(self, other):
         if isinstance(other, KanjiData):
-            if self.data['ivl'] is None and other.data['ivl'] is not None:
+            # Handle None comparison explicitly
+            if self.data['ivl'] is None and other.data['ivl'] is None:
+                return False  # or choose what makes sense in your context
+            if self.data['ivl'] is None:
                 return False
-            return self.data['ivl'] < other.data['ivl']
+            if other.data['ivl'] is None:
+                return True
+            return self.data['ivl'] > other.data['ivl']
 
         raise NotImplementedError
 
     def __lt__(self, other):
         if isinstance(other, KanjiData):
-            if self.data['ivl'] is None and other.data['ivl'] is not None:
+            # Handle None comparison explicitly
+            if self.data['ivl'] is None and other.data['ivl'] is None:
+                return False  # or choose what makes sense in your context
+            if self.data['ivl'] is None:
                 return True
+            if other.data['ivl'] is None:
+                return False
             return self.data['ivl'] < other.data['ivl']
 
         raise NotImplementedError

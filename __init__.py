@@ -157,7 +157,7 @@ class MyApp(QWidget):
         self.middleScroll.setWidget(self.settingsGroupBox)
 
         self.fieldNameGroupBox = MyGroupBox('Field Name')
-        self.fieldNamePatternInput = MyQLineEdit('*Kanji*')
+        self.fieldNamePatternInput = MyQLineEdit('*Hanzi*')
         self.fieldNameGroupBox.layout.addWidget(self.fieldNamePatternInput)
 
         self.filterGroupBox = MyGroupBox('Filter')
@@ -343,11 +343,11 @@ class MyApp(QWidget):
         if not cells:
             self.table.clear()
             self.savePNGBtn.setEnabled(False)
-            self.setWindowTitle('Kanji Table (0)')
+            self.setWindowTitle('Hanzi Table (0)')
             return
         self.savePNGBtn.setEnabled(True)
 
-        self.setWindowTitle(f'Kanji Table ({len([c for c in cells if isinstance(c, KanjiCell)])})')
+        self.setWindowTitle(f'Hanzi Table ({len([c for c in cells if isinstance(c, KanjiCell)])})')
         self.setTableColumns(len(cells))
         self.table.appendItems(cells)
         self.table.resizeCellsToFitContents()
@@ -532,7 +532,7 @@ def showConfig():
 
 def setup():
     mw.kanjiGridWidget = widget = MyApp()
-    action = QAction('Kanji Table', mw)
+    action = QAction('Hanzi Table', mw)
     qconnect(action.triggered, showConfig)
     mw.form.menuTools.addAction(action)
 
