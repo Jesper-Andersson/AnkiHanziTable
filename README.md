@@ -12,13 +12,16 @@ Visualize your progress by seeing your hanzi cards in a pretty table with their 
 
 Installation: 
 
+[https://ankiweb.net/shared/info/768679940?cb=1708215514350](https://ankiweb.net/shared/info/768679940?cb=1708215514350)
+
+Manual:
+
 ![image](https://github.com/Jesper-Andersson/AnkiHanziTable/assets/5511771/d4e6737e-8185-4c41-a374-a66cc29745a8)
 1. Download as Zip.
 2. Extract to %AppData%\Anki2\addons21
 
 Hanzi Fork todo:
 
-* Additional Data (HSK, Simplified)
 * Better alternative to MDBG
 * Fix font errors with traditional
 
